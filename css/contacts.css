@@ -21,12 +21,6 @@ footer {
 
 
 /* Айди */
-#content {
-    padding-top: 1vh;
-    background: linear-gradient(120deg, #393939, 80%, #242424);
-    margin-left: 15vw;
-    margin-right: 15vw;  
-}
 
 #bg {
     position: absolute;
@@ -60,6 +54,7 @@ footer {
 }
 
 #menubutton {
+    margin-left: -30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,18 +70,6 @@ footer {
     background-color: #151515;
     color: white;
     border: 0px;
-}
-
-.sectionName {
-    color:white;
-    text-align: center;
-}
-
-.section {
-    color:white;
-    font-size: 3vh;
-    padding-left: 30px;
-    padding-right:30px;
 }
 
 .orange {
