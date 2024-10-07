@@ -1,0 +1,106 @@
+/* Теги */
+
+body {
+    background-color: #1d1d1d;
+    margin: 0px;
+}
+
+hr {
+    border-width: 2px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-style: dashed;
+    color: white;
+}
+
+footer {
+    margin-top: 5vh;
+    color: gray;
+    float:right
+}
+
+
+/* Айди */
+#content {
+    padding-top: 1vh;
+    background: linear-gradient(120deg, #393939, 80%, #242424);
+    margin-left: 15vw;
+    margin-right: 15vw;  
+}
+
+#bg {
+    position: absolute;
+    max-width:fit-content;
+    text-align: center;
+    margin: 0;
+    font-size: 10vw;
+    color: white;
+    opacity: 10%;
+    z-index: -1;
+    line-height: 95%;
+}
+#title {
+    text-align: center;
+    color: white;
+    margin:0;
+    margin-bottom: 2vh;
+    font-size: 5vi;
+    min-width: 72px;
+}
+
+#navmenu {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 166, 0, 0.2);
+    border-bottom:1vh orange dashed;
+    border-top:1vh orange dashed;
+}
+
+#menubutton {
+    margin-left: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+
+/* Классы */
+.navbutton {
+    height: 72px;
+    width: 144px;
+    font-size: 3vh;
+    background-color: #151515;
+    color: white;
+    border: 0px;
+}
+
+.sectionName {
+    color:white;
+    text-align: center;
+}
+
+.section {
+    color:white;
+    font-size: 3vh;
+    padding-left: 30px;
+
+}
+
+.orange {
+    color:orange;
+}
+
+.navbutton:hover {
+    background-color: #282828; 
+    animation: ButtonHover 0.4s 1 forwards;
+}
+/* Анимация кнопки при наведении мышкой */
+@keyframes ButtonHover {
+    to {
+        color: orange;
+    }
+}
