@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Чинг Чонг</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Bondarchuk D., Cherchenko A.">
+  <link rel="shortcut icon" href="img/Logo.webp">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/contacts.css">
+</head>
+
+<body>
+  <header>
+    <img class="logo mx-auto d-block" src="img/Logo.webp" />
+    <h1 class="title text-center text-white">Чинг Чонг: Опрос</h1>
+
+    <!-- Навбар с кнопками -->
+    <div class="container-fluid navmenu">
+      <!-- Делаю кнопки меньше и центрирую их -->
+      <div class="row gap-1 justify-content-center">
+        <a class="btn btn-main btn-lg col-md-2" href="menu.html" role="button">Меню</a>
+        <a class="btn btn-main btn-lg col-md-2" href="index.html" role="button">Главная</a>
+        <a class="btn btn-main btn-lg col-md-2" href="contacts.html" role="button">О Команде</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article class="container row justify-content-start">
+      <!-- Форма для заполнения пользователю -->
+      <form class="col-9 offset-1">
+        <!-- Вопрос 1: Оценка качества еды -->
+        <div class="mb-3">
+          <label for="foodQuality" class="form-label">Как вы оцениваете качество нашей еды?</label>
+          <select class="form-select" id="foodQuality" required>
+            <option value="" disabled selected>Выберите оценку</option>
+            <option value="1">Очень плохо</option>
+            <option value="2">Плохо</option>
+            <option value="3">Удовлетворительно</option>
+            <option value="4">Хорошо</option>
+            <option value="5">Отлично</option>
+          </select>
+        </div>
+
+        <!-- Вопрос 2: Оценка сервиса -->
+        <div class="mb-3">
+          <label for="serviceQuality" class="form-label">Как вам наш сервис?</label>
+          <select class="form-select" id="serviceQuality" required>
+            <option value="" disabled selected>Выберите оценку</option>
+            <option value="1">Очень плохо</option>
+            <option value="2">Плохо</option>
+            <option value="3">Удовлетворительно</option>
+            <option value="4">Хорошо</option>
+            <option value="5">Отлично</option>
+          </select>
+        </div>
+
+        <!-- Вопрос 3: Сайт -->
+        <div class="mb-3">
+          <label for="serviceQuality" class="form-label">Оцените работу Сайта</label>
+          <select class="form-select" id="serviceQuality" required>
+            <option value="" disabled selected>Выберите оценку</option>
+            <option value="1">Очень плохо</option>
+            <option value="2">Плохо</option>
+            <option value="3">Удовлетворительно</option>
+            <option value="4">Хорошо</option>
+            <option value="5">Отлично</option>
+          </select>
+        </div>
+
+        <!-- Вопрос 4: Блюда, которые вы хотели бы увидеть -->
+        <div class="mb-3">
+          <label for="dishesSuggestion" class="form-label">Какие блюда вы бы хотели увидеть у нас?</label>
+          <input type="text" class="form-control" id="dishesSuggestion" placeholder="Введите ваши предложения">
+        </div>
+
+        <!-- Вопрос 5: Блюда китайской кухни -->
+        <div class="mb-3">
+          <label for="chineseDishes" class="form-label">Ваши пожелания</label>
+          <input type="text" class="form-control" id="chineseDishes" placeholder="Ваши предложения">
+        </div>
+
+        <button type="submit" id="submitBtn" class="btn btn-main col-2">Отправить</button>
+      </form>
+
+      <!-- Вывод результатов -->
+      <div id="resultWrapper" class="col my-4">
+        <p>Результаты:</p>
+        <p class="result">1. </p>
+        <p class="result">2. </p>
+        <p class="result">3. </p>
+        <p class="result">4. </p>
+        <p class="result">5. </p>
+        <p class="result"></p>
+      </div>
+    </article>
+
+  </main>
+
+
+  <footer>
+    &#169; Copyright 1995-2024 Чинг Чонг. Все права зашишены...
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/FormScript.js"></script>
+  <script src="js/TitleAnim.js"></script>
+</body>
+
+</html>

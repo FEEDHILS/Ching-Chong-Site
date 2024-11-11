@@ -1,5 +1,28 @@
 /* Теги */
 
+.btn-main {
+    background-color:#151515;
+    color: white;
+    padding: 3vh;
+    border-radius: 0;
+    text-wrap: nowrap;
+}
+Анимация кнопки при наведении мышкой
+.btn-main:hover {
+    animation: ButtonHover 0.4s 1 forwards;
+}
+
+@keyframes ButtonHover {
+    from {
+        background-color:#151515;
+        color: white;
+    }
+    to {
+        color: orange;
+        background-color:#282828;
+    }
+}
+
 body {
     background-image: url("../img/Background.png");
     background-size: 100%;
@@ -99,16 +122,6 @@ footer {
     color:orange;
 } 
 
-.navbutton:hover {
-    background-color: #282828; 
-    animation: ButtonHover 0.4s 1 forwards;
-}
-/* Анимация кнопки при наведении мышкой */
-@keyframes ButtonHover {
-    to {
-        color: orange;
-    }
-}
 
 
 /* Адаптивный design */

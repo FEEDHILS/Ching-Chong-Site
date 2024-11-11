@@ -18,98 +18,58 @@ hr {
 }
 
 footer {
-    margin-top: 2vh;
+    margin-top: 5vh;
     color: gray;
     float:right;
     font-size: 2vh;
 }
 
 
-/* Айди */
-#content {
+/* Классы */
+.content { 
     padding-top: 1vh;
     background: linear-gradient(120deg, #393939, 80%, #242424);
-    margin-left: 15vw;
-    margin-right: 15vw;
-    
 }
 
-#title {
-    text-align: center;
-    color: white;
-    margin:0;
-    margin-bottom: 2vh;
+.title {
     font-size: 5vw;
 }
 
-#navmenu {
-    width: 100%;
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
+.navmenu {
     background-color: rgba(255, 166, 0, 0.2);
     border-bottom:1vh orange dashed;
     border-top:1vh orange dashed;
 }
 
-#menubutton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3vh;
+.btn-main {
+    background-color:#151515;
+    color: white;
+    padding: 3vh;
+    border-radius: 0;
+    text-wrap: nowrap;
 }
 
-#articlebutton {
-    max-width: 50vw;
-}
-
-#noscript {
+.noscript {
     float:right;
     color:red;
 }
 
-#logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#logoimg {
+.logo {
     width: 10vw;
 }
 
 
-/* Классы */
-.navbutton {
-    height: 12vh;
-    min-height: 100px;
-    max-height: 120px;
-    width: 13vw;
-    min-width: 120px;
-    font-size: 2vw;
-    background-color: #151515;
-    color: white;
-    border: 0px;
-    margin: .1vw;
-}
-
-.sectionName {
-    text-align: center;
-}
-
-.section {
-    padding-left: 30px;
-    padding-right:30px;
-}
-
 
 /* Анимация кнопки при наведении мышкой */
-.navbutton:hover {
+.btn-main:hover {
     animation: ButtonHover 0.4s 1 forwards;
 }
 
 @keyframes ButtonHover {
+    from {
+        background-color:#151515;
+        color: white;
+    }
     to {
         color: orange;
         background-color:#282828;
@@ -117,37 +77,17 @@ footer {
 }
 
 
-/* Адаптивный design */
+/* Немного адаптивности для текста */
 @media (orientation: portrait) {
-    /* Для Вертикальных экранов лучше подходит vh. Может есть способ как сделать масштабирование
-        Универсальным... */
-
     body {
         font-size: 3vh;
     }
 
     hr {
-        border-width: .2vh;
-    }
-
-    #navmenu {
-        flex-direction: column;
-    }
-
-    #logoimg {
-        width: 12vh;
+        border-width: .3vh;
     }
 
     #title {
-        font-size: 4vh;
-    }
-    
-    .navbutton {
-        width: 100vw;
-        height: 10vh;
-        min-height: 20px;
-        max-height: 160px;
-        margin: .2vh;
-        font-size: 2vh;
-    }   
+        font-size: 7vh;
+    } 
 }
