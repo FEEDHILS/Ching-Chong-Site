@@ -5,6 +5,8 @@ addEventListener("submit", (e) => {
     const result = document.querySelectorAll("#resultWrapper .result");
     const selects = document.querySelectorAll("form select, input");
     let score = 0;
+    document.getElementById("resultWrapper").style.display = "block";
+    
 
     for(let i = 0; i < (result.length-1); i++)
     {

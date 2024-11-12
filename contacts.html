@@ -3,12 +3,18 @@
 
 <head>
   <title>Чинг Чонг</title>
-  <meta charset="utf-8">
-  <meta name="author" content="Bondarchuk D., Cherchenko A.">
-  <link rel="shortcut icon" href="img/Logo.webp">
+  <meta charset="utf-8" />
+  <meta name="author" content="Bondarchuk D., Cherchenko A." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="img/Logo.webp" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/contacts.css">
+
+  <!-- Кастомный шрифт -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&display=swap');
+  </style>
 </head>
 
 <body>
@@ -20,52 +26,53 @@
     <div class="container-fluid navmenu">
       <!-- Делаю кнопки меньше и центрирую их -->
       <div class="row gap-1 justify-content-center">
-        <a class="btn btn-main btn-lg col-md-2" href="menu.html" role="button">Меню</a>
-        <a class="btn btn-main btn-lg col-md-2" href="index.html" role="button">Главная</a>
-        <a class="btn btn-main btn-lg col-md-2" href="contacts.html" role="button">О Команде</a>
+        <a class="btn btn-main btn-lg col-lg-2" href="menu.html" role="button">Меню</a>
+        <a class="btn btn-main btn-lg col-lg-2" href="index.html" role="button">Главная</a>
+        <a class="btn btn-main btn-lg col-lg-2" href="contacts.html" role="button">О Команде</a>
       </div>
     </div>
   </header>
 
   <main>
     <article>
-      <div class="container my-5">
-        <div class="row justify-content-center">
+      <div class="container py-3">
+        <div class="row">
           <!-- Карточка 1 -->
-          <div class="col-9 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
-            <div class="card p-2">
-              <img src="img/team/MrJinJong.jpg" class="card-img-top" alt="Фото человека">
-              <div class="card-body text-center">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="img/team/MrJinJong.jpg" class="card-img-top p-2" alt="ChingChong">
+              <div class="card-body">
                 <h5 class="card-title">Мистер Чинг Чонг</h5>
-                <p class="card-text">Основатель сети и один из сильнейших Шефов всего мира</p>
-                <p class="card-text email">Email: JuanhuSuChief@gmail.com</p>
+                <p class="card-text">Oдин из сильнейших Шефов всего мира</p>
+                <p class="card-text pt-5">Email: ChingChong@gmail.com</p>
               </div>
             </div>
           </div>
 
           <!-- Карточка 2 -->
-          <div class="col-9 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
-            <div class="card p-2">
-              <img src="img/team/Yan Juanhu.jpg" class="card-img-top" alt="Фото человека">
-              <div class="card-body text-center">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="img/team/Yan Juanhu.jpg" class="card-img-top p-2" alt="ChingChong">
+              <div class="card-body">
                 <h5 class="card-title">Ян Джуан</h5>
                 <p class="card-text">Верный друг Чинг Чонга</p>
-                <p class="card-text email">Email: JuanhuSuChief@gmail.com</p>
+                <p class="card-text pt-5">Email: JuanhuSuChief@gmail.com</p>
               </div>
             </div>
           </div>
 
           <!-- Карточка 3 -->
-          <div class="col-9 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
-            <div class="card p-2">
-              <img src="img/team/Zhang Chingachkuk.jpg" class="card-img-top" alt="Фото человека">
-              <div class="card-body text-center">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="img/team/Zhang Chingachkuk.jpg" class="card-img-top p-2" alt="ChingChong">
+              <div class="card-body justify-content-between">
                 <h5 class="card-title">Чжен Чингочкук</h5>
                 <p class="card-text">Стажор</p>
-                <p class="card-text email">Email: Chingachkuk@gmail.com</p>
+                <p class="card-text pt-5">Email: Chingachkuk@gmail.com</p>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </article>
@@ -73,7 +80,7 @@
   </main>
 
 
-  <footer>
+  <footer class="text-secondary text-end pt-3">
     &#169; Copyright 1995-2024 Чинг Чонг. Все права зашишены...
   </footer>
 

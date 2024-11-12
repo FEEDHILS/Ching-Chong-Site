@@ -1,38 +1,33 @@
-/* Теги */
+/* HTML Теги */
 body {
     background-image: url("../img/Background.png");
     background-size: 100%;
     color:white;
-    margin: 0px;
-    font-size: 1.7vw;
-    overflow-wrap: break-word;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Bellota", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+footer {
+    font-size: 0.7em;
 }
 
 hr {
-    border-width: .2vw;
+    border-width: .4vh;
     margin-top: 1vh;
     margin-bottom: 1vh;
     border-style: dashed;
     color: white;
 }
 
-footer {
-    margin-top: 5vh;
-    color: gray;
-    float:right;
-    font-size: 2vh;
-}
-
-
 /* Классы */
-.content { 
-    padding-top: 1vh;
-    background: linear-gradient(120deg, #393939, 80%, #242424);
-}
-
-.title {
-    font-size: 5vw;
+.btn-main {
+    background-color:#151515;
+    color: white;
+    border-radius: 0;
+    padding: 3vh 0vh;
+    
 }
 
 .navmenu {
@@ -41,12 +36,12 @@ footer {
     border-top:1vh orange dashed;
 }
 
-.btn-main {
-    background-color:#151515;
-    color: white;
-    padding: 3vh;
-    border-radius: 0;
-    text-wrap: nowrap;
+.content { 
+    background: linear-gradient(120deg, #393939, 80%, #242424);
+}
+
+.title {
+    font-size: 200%;
 }
 
 .noscript {
@@ -55,10 +50,8 @@ footer {
 }
 
 .logo {
-    width: 10vw;
+    width: 10vh;
 }
-
-
 
 /* Анимация кнопки при наведении мышкой */
 .btn-main:hover {
@@ -76,18 +69,13 @@ footer {
     }
 }
 
+/* Айди */
 
-/* Немного адаптивности для текста */
-@media (orientation: portrait) {
-    body {
-        font-size: 3vh;
-    }
-
-    hr {
-        border-width: .3vh;
-    }
-
-    #title {
-        font-size: 7vh;
-    } 
+/* p.s этот элемент используется !!ТОЛЬКО!! в "form.html" 
+но мне лень делать отдельный css для формы,
+поскольку она не требует никаких дальнейших доработок, 
+так что в форме я просто использую main.css. 
+!!ЭТОТ ЭЛЕМЕНТ ИЗ "form.html"!! */
+#resultWrapper {
+    display: none;
 }

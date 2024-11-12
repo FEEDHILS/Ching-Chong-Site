@@ -1,0 +1,93 @@
+/* Теги */
+body {
+    background-image: url("../img/Background.png");
+    background-size: 100%;
+    color:white;
+    margin: 0px;
+    font-size: 1.7vw;
+    overflow-wrap: break-word;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+hr {
+    border-width: .2vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-style: dashed;
+    color: white;
+}
+
+footer {
+    margin-top: 5vh;
+    color: gray;
+    float:right;
+    font-size: 2vh;
+}
+
+
+/* Классы */
+.content { 
+    padding-top: 1vh;
+    background: linear-gradient(120deg, #393939, 80%, #242424);
+}
+
+.title {
+    font-size: 5vw;
+}
+
+.navmenu {
+    background-color: rgba(255, 166, 0, 0.2);
+    border-bottom:1vh orange dashed;
+    border-top:1vh orange dashed;
+}
+
+.btn-main {
+    background-color:#151515;
+    color: white;
+    padding: 3vh;
+    border-radius: 0;
+    text-wrap: nowrap;
+}
+
+.noscript {
+    float:right;
+    color:red;
+}
+
+.logo {
+    width: 10vw;
+}
+
+
+
+/* Анимация кнопки при наведении мышкой */
+.btn-main:hover {
+    animation: ButtonHover 0.4s 1 forwards;
+}
+
+@keyframes ButtonHover {
+    from {
+        background-color:#151515;
+        color: white;
+    }
+    to {
+        color: orange;
+        background-color:#282828;
+    }
+}
+
+
+/* Немного адаптивности для текста */
+@media (orientation: portrait) {
+    body {
+        font-size: 3vh;
+    }
+
+    hr {
+        border-width: .3vh;
+    }
+
+    #title {
+        font-size: 7vh;
+    } 
+}

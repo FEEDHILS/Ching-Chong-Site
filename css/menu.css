@@ -1,18 +1,15 @@
 @import "main.css";
-/* Айди */
+
+/* Классы */
 .card {
     color:white;
     background-color:#28282871;
+    padding: 2%;
 }
 
 .card-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.email {
-    padding-top: 3rem;
-    margin-top: auto;
+    text-align: center;
+    /* padding-bottom: 10vh; */
 }
 
 .card:hover {
