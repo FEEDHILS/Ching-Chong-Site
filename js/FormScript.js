@@ -11,10 +11,15 @@ addEventListener("submit", (e) => {
     for(let i = 0; i < (result.length-1); i++)
     {
         result[i].innerHTML = (i+1) + ". " + selects[i].value;
-        if (isNaN(parseInt(selects[i].value)))
-            score += selects[i].value.length > 0 ? 1 : 0; // Добавляю доп. балл если юзер че-то написал в поля.
+        console.log(selects[i].nodeName);
+        if (selects[i].nodeName == "INPUT")
+        {
+            let length = selects[i].value.trim().length;
+            console.log(length);
+            score += length > 0 ? 1 : 0;
+        }
         else
-            score += parseInt(selects[i].value);
+            score += Number(selects[i].value);
     }
 
     result[result.length-1].innerHTML = "Итоговый результат: " + score;
